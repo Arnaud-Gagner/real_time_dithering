@@ -1,6 +1,5 @@
 {
   "dependencies": [
-    "imgui",
     "opencv4"
   ]
 }

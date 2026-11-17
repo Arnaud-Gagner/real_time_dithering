@@ -11,7 +11,7 @@ TODO:
 
 ## Building on Windows
 
-build with:
+build with MSVC:
 > Git Bash:
 ```bash
 rm -rf build;

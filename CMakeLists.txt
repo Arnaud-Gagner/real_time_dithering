@@ -5,7 +5,6 @@ project(dither_filter_rs VERSION 0.1.1 LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 17)
 
 # [vcpkg]
-find_package(imgui CONFIG REQUIRED)
 find_package(OpenCV CONFIG REQUIRED COMPONENTS core photo video videoio highgui)
 
 set (SOURCES
@@ -31,7 +30,6 @@ target_include_directories(${PROJECT_NAME}
 
 target_link_libraries(${PROJECT_NAME} 
     PRIVATE
-        imgui::imgui
         opencv_core
         opencv_photo
         opencv_video
