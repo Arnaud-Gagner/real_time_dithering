@@ -65,7 +65,7 @@ namespace
         for (int row = 0; row < input.rows; ++row) {
             for (int col = 0; col < input.cols; ++col) {
                 float currentValue = floatInput.at<float>(row, col);
-                float nextValue = 255 * (currentValue > 127);
+                float nextValue = 255.f * (currentValue > 127.f);
                 floatInput.at<float>(row, col) = nextValue;
 
                 float error = currentValue - nextValue;
@@ -102,7 +102,7 @@ namespace
         for (int row = 0; row < input.rows; ++row) {
             for (int col = 0; col < input.cols; ++col) {
                 float currentValue = floatInput.at<float>(row, col);
-                float nextValue = 255 * (currentValue > 127);
+                float nextValue = 255.f * (currentValue > 127.f);
                 floatInput.at<float>(row, col) = nextValue;
 
                 float error = currentValue - nextValue;
@@ -133,7 +133,7 @@ namespace
         for (int row = 0; row < input.rows; ++row) {
             for (int col = 0; col < input.cols; ++col) {
                 float currentValue = floatInput.at<float>(row, col);
-                float nextValue = 255 * (currentValue > 127);
+                float nextValue = 255.f * (currentValue > 127.f);
                 floatInput.at<float>(row, col) = nextValue;
 
                 float error = currentValue - nextValue;
@@ -161,7 +161,7 @@ namespace
         for (int row = 0; row < input.rows; ++row) {
             for (int col = 0; col < input.cols; ++col) {
                 float currentValue = floatInput.at<float>(row, col);
-                float nextValue = 255 * (currentValue > 127);
+                float nextValue = 255.f * (currentValue > 127.f);
                 floatInput.at<float>(row, col) = nextValue;
 
                 float error = currentValue - nextValue;
